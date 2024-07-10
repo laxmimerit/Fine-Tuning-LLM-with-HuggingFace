@@ -173,3 +173,10 @@ cython_debug/
 */runs/
 */runs_*
 */runs/*
+*tfevents*
+*vocab.txt
+*config.json
+*tokenizer.json
+*tokens_map*
+*special_token*
+*trainer_state*
