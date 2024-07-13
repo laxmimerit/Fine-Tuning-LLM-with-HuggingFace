@@ -180,3 +180,4 @@ cython_debug/
 *tokens_map*
 *special_token*
 *trainer_state*
+*spiece.model*
