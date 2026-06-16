@@ -1,0 +1,42 @@
+[project]
+name = "llm-finetuning"
+version = "0.1.0"
+description = "LLM Fine Tuning -- Laxmikant"
+requires-python = ">=3.10, <3.13"
+dependencies = [
+    "torch==2.3.1+cu121",
+    "torchvision==0.18.1+cu121",
+    "torchaudio==2.3.1+cu121",
+    "transformers==4.42.4",
+    "datasets==2.21.0",
+    "accelerate==0.32.1",
+    "peft==0.11.1",
+    "bitsandbytes==0.43.1",
+    "evaluate==0.4.3",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "matplotlib==3.9.0",
+    "seaborn==0.13.2",
+    "scikit-learn==1.5.1",
+    "scipy==1.14.0",
+    "Pillow==10.4.0",
+    "soundfile==0.12.1",
+    "sentencepiece==0.2.0",
+    "seqeval==1.2.2",
+    "umap-learn==0.5.6",
+    "bertviz==1.4.0",
+    "openpyxl==3.1.2",
+    "py7zr==0.21.1",
+    "ipykernel==6.29.5",
+    "jupyter==1.0.0",
+]
+
+[tool.uv.sources]
+torch       = { index = "pytorch-cu121" }
+torchvision = { index = "pytorch-cu121" }
+torchaudio  = { index = "pytorch-cu121" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
