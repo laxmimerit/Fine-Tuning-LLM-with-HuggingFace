@@ -6,7 +6,6 @@ requires-python = ">=3.11, <3.14"
 dependencies = [
     "torch==2.7.0+cu126",
     "torchvision==0.22.0+cu126",
-    "torchaudio==2.7.0+cu126",
     "transformers==4.57.6",
     "peft==0.19.1",
     "trl==0.29.1",
@@ -18,16 +17,12 @@ dependencies = [
     "sentencepiece==0.2.1",
     "seqeval==1.2.2",
     "umap-learn==0.5.6",
-    "bertviz==1.4.0",
-    "openpyxl==3.1.2",
-    "py7zr==0.21.1",
     "jupyter==1.0.0",
 ]
 
 [tool.uv.sources]
 torch       = { index = "pytorch-cu126" }
 torchvision = { index = "pytorch-cu126" }
-torchaudio  = { index = "pytorch-cu126" }
 
 [[tool.uv.index]]
 name = "pytorch-cu126"
